@@ -25,8 +25,3 @@ chmod +x *.sh
 # Restart terminal and run: source ~/.bashrc
 ./02_install_conda_tools.sh
 ./03_install_kneaddata.sh
-./04_install_humann3.sh
-./05_install_kraken2.sh
-./06_install_assembly_tools.sh
-./07_install_binning_tools.sh
-./08_install_optional_tools.sh  # Optional advanced tools
