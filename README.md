@@ -20,8 +20,18 @@ Network: Stable internet connection for downloading databases
 # Make scripts executable
 chmod +x *.sh
 
+2. Run Installation Scripts
+```{bash}
+# Make scripts executable
+chmod +x *.sh
+
 # Run in sequence
 ./01_setup_base.sh
 # Restart terminal and run: source ~/.bashrc
 ./02_install_conda_tools.sh
 ./03_install_kneaddata.sh
+./04_install_humann3.sh
+./05_install_kraken2.sh
+./06_install_assembly_tools.sh
+./07_install_binning_tools.sh
+```
