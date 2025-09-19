@@ -4,7 +4,8 @@ set -e  # 에러 시 스크립트 중단
 echo "=== EasyMetagenome 기본 환경 설정 시작 ==="
 
 # Windows 경로를 WSL 경로로 변환
-db="/mnt/c/Users/User/OneDrive/DOCUME~1-LAPTOP-0LF8B10V-3815/Desktop/shotgun/GC"
+# db="/mnt/c/Users/User/OneDrive/DOCUME~1-LAPTOP-0LF8B10V-3815/Desktop/shotgun/GC"
+db='/home/user/Desktop/Data_8TB/Macrogen/Shotgun/OC'
 soft=~/miniconda3
 
 echo "데이터베이스 경로: ${db}"
@@ -18,7 +19,7 @@ export PATH="${soft}/bin:${soft}/condabin:/usr/local/sbin:/usr/local/bin:/usr/sb
 
 # Miniconda 설치 확인
 if [ ! -f ~/miniconda3/bin/conda ]; then
-    echo "Miniconda 다운로드 중..."
+    echo "Miniconda 다운로드 중..."6
     wget -c https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     
     echo "Miniconda 설치 중..."

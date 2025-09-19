@@ -12,7 +12,7 @@ if ! conda env list | grep -q "humann3"; then
     conda create -n humann3 -y
     
     echo "HUMAnN3 패키지 설치 중..."
-    conda run -n humann3 conda install metaphlan=4.1.1 humann=3.9 -c bioconda -c conda-forge -y
+    conda run -n humann3 conda install metaphlan=4.1.1 humann=3.7 -c bioconda -c conda-forge -y
     
     echo "HUMAnN3 설치 테스트..."
     conda run -n humann3 humann_test
